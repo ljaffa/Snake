@@ -39,7 +39,7 @@ class Window extends JFrame {
 		// initial position of the snake
 		Tuple position = new Tuple(10, 10);
 		// passing this value to the controller
-		ThreadsController c = new ThreadsController(position);
+		SnakeThreads c = new SnakeThreads(position);
 		// Let's start the game now..
 		c.start();
 

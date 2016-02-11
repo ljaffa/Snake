@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 //Controls all the game logic .. most important class in this project.
-public class ThreadsController extends Thread {
+public class SnakeThreads extends Thread {
 	ArrayList<ArrayList<DataOfSquare>> Squares = new ArrayList<ArrayList<DataOfSquare>>();
 	Tuple headSnakePos;
 	int sizeSnake = 3;
@@ -12,7 +12,7 @@ public class ThreadsController extends Thread {
 	Tuple foodPosition;
 
 	// Constructor of ControlleurThread
-	ThreadsController(Tuple positionDepart) {
+	SnakeThreads(Tuple positionDepart) {
 		// Get all the threads
 		Squares = Window.Grid;
 
