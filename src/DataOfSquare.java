@@ -4,21 +4,21 @@ import java.util.ArrayList;
 public class DataOfSquare {
 
 	// ArrayList that'll contain the colors
-	ArrayList<Color> C = new ArrayList<Color>();
+	ArrayList<Color> c = new ArrayList<Color>();
 	int color; // 2: snake , 1: food, 0:empty
 	SquarePanel square;
 
 	public DataOfSquare(int col) {
 
 		// Lets add the color to the arrayList
-		C.add(Color.darkGray);// 0
-		C.add(Color.BLUE); // 1
-		C.add(Color.white); // 2
+		c.add(Color.darkGray);// 0
+		c.add(Color.BLUE); // 1
+		c.add(Color.white); // 2
 		color = col;
-		square = new SquarePanel(C.get(color));
+		square = new SquarePanel(c.get(color));
 	}
 
 	public void lightMeUp(int c) {
-		square.ChangeColor(C.get(c));
+		square.ChangeColor(this.c.get(c));
 	}
 }
